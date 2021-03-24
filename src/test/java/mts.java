@@ -15,7 +15,7 @@ public class mts {
     }
 
     @Test
-    void mts(){
+    void mtsTest1(){
         String street = "Ленина";
         String building = "101";
 
@@ -29,7 +29,7 @@ public class mts {
     }
 
     @Test
-    void mts2(){
+    void mtsTest2(){
 
         String name = "John Doe";
         String phone = "9999999999";
@@ -51,8 +51,9 @@ public class mts {
         $(".checkbox__icon").doubleClick();
         $(".btn.btn_large.btn-loader").click();
 
+        $(".section-box__title").shouldHave(Condition.text("Ваша заявка отправлена!"));
 
-        sleep(7000);
+
 
 
     }
